@@ -28,16 +28,16 @@ namespace Project.Data
                 new Department { Department_Id = "D0002", Name = "DS" , Created_at = DateTime.Now },
                 new Department { Department_Id = "D0003", Name = "MKT" , Created_at = DateTime.Now }
                 );
-            builder.Entity<User>().HasData(
-                new User { Id = 1, Email = "user1@example.com", Password = "Abc12345678", Fullname = "James Smith", Phone = "1234567890", Birthday = new DateTime(1990, 5, 10), Image = "image1.jpg", Ward = "Westminster", District = "City of Westminster", Province = "Greater London" , Created_at = DateTime.Now},
-                new User { Id = 2, Email = "user2@example.com", Password = "Abc12345678", Fullname = "Sarah Johnson", Phone = "2345678901", Birthday = new DateTime(1995, 8, 15), Image = "image2.jpg", Ward = "City Centre", District = "Manchester City", Province = "Greater Manchester" , Created_at = DateTime.Now },
-                new User { Id = 3, Email = "user3@example.com", Password = "Abc12345678", Fullname = "David Williams", Phone = "3456789012", Birthday = new DateTime(1985, 3, 20), Image = "image3.jpg", Ward = "Ladywood", District = "Birmingham City Centre", Province = "West Midlands" , Created_at = DateTime.Now },
-                new User { Id = 4, Email = "user4@example.com", Password = "Abc12345678", Fullname = "Emma Brown", Phone = "4567890123", Birthday = new DateTime(1980, 12, 25), Image = "image4.jpg", Ward = "Riverside", District = "Liverpool City Centre", Province = "Merseyside" , Created_at = DateTime.Now },
-                new User { Id = 5, Email = "user5@example.com", Password = "Abc12345678", Fullname = "John Jones", Phone = "5678901234", Birthday = new DateTime(1992, 6, 30), Image = "image5.jpg", Ward = "City Centre", District = "Leeds City Centre", Province = "West Yorkshire" , Created_at = DateTime.Now },
-                new User { Id = 6, Email = "user6@example.com", Password = "Abc12345678", Fullname = "Lucy Taylor", Phone = "6789012345", Birthday = new DateTime(1978, 9, 5), Image = "image6.jpg", Ward = "Central", District = "Bristol City Centre", Province = "Bristol" , Created_at = DateTime.Now },
-                new User { Id = 7, Email = "user7@example.com", Password = "Abc12345678", Fullname = "Michael Davies", Phone = "7890123456", Birthday = new DateTime(1988, 11, 12), Image = "image7.jpg", Ward = "City Centre", District = "Sheffield City Centre", Province = "South Yorkshire" , Created_at = DateTime.Now },
-                new User { Id = 8, Email = "user8@example.com", Password = "Abc12345678", Fullname = "Olivia Wilson", Phone = "8901234567", Birthday = new DateTime(1998, 4, 18), Image = "image8.jpg", Ward = "Ouseburn", District = "Newcastle City Centre", Province = "Tyne and Wear" , Created_at = DateTime.Now },
-                new User { Id = 9, Email = "user9@example.com", Password = "Abc12345678", Fullname = "Thomas Evans", Phone = "9012345678", Birthday = new DateTime(1983, 7, 22), Image = "image9.jpg", Ward = "Bridge", District = "Nottingham City Centre", Province = "Nottinghamshire" , Created_at = DateTime.Now }
+            builder.Entity<Applicant>().HasData(
+                new Applicant { Id = 1, Email = "user1@example.com", Password = "Abc12345678", Fullname = "James Smith", Phone = "1234567890", Birthday = new DateTime(1990, 5, 10), Image = "image1.jpg", Ward = "Westminster", District = "City of Westminster", Province = "Greater London" , Created_at = DateTime.Now},
+                new Applicant { Id = 2, Email = "user2@example.com", Password = "Abc12345678", Fullname = "Sarah Johnson", Phone = "2345678901", Birthday = new DateTime(1995, 8, 15), Image = "image2.jpg", Ward = "City Centre", District = "Manchester City", Province = "Greater Manchester" , Created_at = DateTime.Now },
+                new Applicant { Id = 3, Email = "user3@example.com", Password = "Abc12345678", Fullname = "David Williams", Phone = "3456789012", Birthday = new DateTime(1985, 3, 20), Image = "image3.jpg", Ward = "Ladywood", District = "Birmingham City Centre", Province = "West Midlands" , Created_at = DateTime.Now },
+                new Applicant { Id = 4, Email = "user4@example.com", Password = "Abc12345678", Fullname = "Emma Brown", Phone = "4567890123", Birthday = new DateTime(1980, 12, 25), Image = "image4.jpg", Ward = "Riverside", District = "Liverpool City Centre", Province = "Merseyside" , Created_at = DateTime.Now },
+                new Applicant { Id = 5, Email = "user5@example.com", Password = "Abc12345678", Fullname = "John Jones", Phone = "5678901234", Birthday = new DateTime(1992, 6, 30), Image = "image5.jpg", Ward = "City Centre", District = "Leeds City Centre", Province = "West Yorkshire" , Created_at = DateTime.Now },
+                new Applicant { Id = 6, Email = "user6@example.com", Password = "Abc12345678", Fullname = "Lucy Taylor", Phone = "6789012345", Birthday = new DateTime(1978, 9, 5), Image = "image6.jpg", Ward = "Central", District = "Bristol City Centre", Province = "Bristol" , Created_at = DateTime.Now },
+                new Applicant { Id = 7, Email = "user7@example.com", Password = "Abc12345678", Fullname = "Michael Davies", Phone = "7890123456", Birthday = new DateTime(1988, 11, 12), Image = "image7.jpg", Ward = "City Centre", District = "Sheffield City Centre", Province = "South Yorkshire" , Created_at = DateTime.Now },
+                new Applicant { Id = 8, Email = "user8@example.com", Password = "Abc12345678", Fullname = "Olivia Wilson", Phone = "8901234567", Birthday = new DateTime(1998, 4, 18), Image = "image8.jpg", Ward = "Ouseburn", District = "Newcastle City Centre", Province = "Tyne and Wear" , Created_at = DateTime.Now },
+                new Applicant { Id = 9, Email = "user9@example.com", Password = "Abc12345678", Fullname = "Thomas Evans", Phone = "9012345678", Birthday = new DateTime(1983, 7, 22), Image = "image9.jpg", Ward = "Bridge", District = "Nottingham City Centre", Province = "Nottinghamshire" , Created_at = DateTime.Now }
                 );
             builder.Entity<Job>().HasData(
                 new Job { Id = 1 , Department_Id = "D0001", Name = "C#" , Created_at = DateTime.Now },
@@ -98,36 +98,27 @@ namespace Project.Data
                 new VacancyJob { Id = 14, Vacancy_Id = "V0005", Job_Id = 5, Created_at = DateTime.Now },
                 new VacancyJob { Id = 15, Vacancy_Id = "V0005", Job_Id = 6, Created_at = DateTime.Now }
                 );
-            builder.Entity<Applicant>().HasData(
-                new Applicant { Applicant_Id = "A0001", User_Id = 1, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0002", User_Id = 2, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0003", User_Id = 3, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0004", User_Id = 4, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0005", User_Id = 5, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0006", User_Id = 6, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0007", User_Id = 7, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0008", User_Id = 8, StatusApplicant_Id = 1, Created_at = DateTime.Now },
-                new Applicant { Applicant_Id = "A0009", User_Id = 9, StatusApplicant_Id = 1, Created_at = DateTime.Now }
+            builder.Entity<ApplicantVacancy>().HasData(
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0001", Vacancy_Id = "V0001", Applicant_Id = 1, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0002", Vacancy_Id = "V0002", Applicant_Id = 2, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0003", Vacancy_Id = "V0003", Applicant_Id = 3, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0004", Vacancy_Id = "V0004", Applicant_Id = 4, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0005", Vacancy_Id = "V0005", Applicant_Id = 5, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0006", Vacancy_Id = "V0001", Applicant_Id = 6, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0007", Vacancy_Id = "V0002", Applicant_Id = 7, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0008", Vacancy_Id = "V0003", Applicant_Id = 8, StatusApplicant_Id = 1, Created_at = DateTime.Now },
+                new ApplicantVacancy { ApplicantVacancy_Id = "A0009", Vacancy_Id = "V0004", Applicant_Id = 9, StatusApplicant_Id = 1, Created_at = DateTime.Now }
                 );
-            builder.Entity<ApplicantVacnacy>().HasData(
-                new ApplicantVacnacy { Id = 1, Vacancy_Id = "V0001", Applicant_Id = "A0001", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 2, Vacancy_Id = "V0001", Applicant_Id = "A0002", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 3, Vacancy_Id = "V0001", Applicant_Id = "A0003", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 4, Vacancy_Id = "V0001", Applicant_Id = "A0004", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 5, Vacancy_Id = "V0002", Applicant_Id = "A0001", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 6, Vacancy_Id = "V0002", Applicant_Id = "A0002", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 7, Vacancy_Id = "V0002", Applicant_Id = "A0003", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 8, Vacancy_Id = "V0002", Applicant_Id = "A0004", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 9, Vacancy_Id = "V0003", Applicant_Id = "A0005", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 10, Vacancy_Id = "V0003", Applicant_Id = "A0004", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 11, Vacancy_Id = "V0003", Applicant_Id = "A0003", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 12, Vacancy_Id = "V0004", Applicant_Id = "A0002", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 13, Vacancy_Id = "V0004", Applicant_Id = "A0001", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 14, Vacancy_Id = "V0004", Applicant_Id = "A0005", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 15, Vacancy_Id = "V0005", Applicant_Id = "A0001", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 16, Vacancy_Id = "V0005", Applicant_Id = "A0002", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 17, Vacancy_Id = "V0005", Applicant_Id = "A0003", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now },
-                new ApplicantVacnacy { Id = 18, Vacancy_Id = "V0005", Applicant_Id = "A0005", StatusInterview_Id = 1, Employee_Id = null, Created_at = DateTime.Now }
+            builder.Entity<InterviewVacancy>().HasData(
+                new InterviewVacancy { Id = 1, ApplicantVacancy_Id = "A0001", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 2, ApplicantVacancy_Id = "A0002", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 3, ApplicantVacancy_Id = "A0003", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 4, ApplicantVacancy_Id = "A0004", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 5, ApplicantVacancy_Id = "A0001", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 6, ApplicantVacancy_Id = "A0002", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 7, ApplicantVacancy_Id = "A0003", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 8, ApplicantVacancy_Id = "A0004", StatusInterview_Id = 1, Created_at = DateTime.Now },
+                new InterviewVacancy { Id = 9, ApplicantVacancy_Id = "A0005", StatusInterview_Id = 1, Created_at = DateTime.Now }
                 );
          
 
@@ -182,7 +173,7 @@ namespace Project.Data
         }
         public DbSet<Department> Departments { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<User> UsersClient { get; set; }
+        public DbSet<Applicant> Applicants { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<StatusApplicant> StatusApplicants { get; set; }
@@ -190,7 +181,7 @@ namespace Project.Data
         public DbSet<StatusInterview> StatusInterviews { get; set; }
         public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<VacancyJob> VacanciesJobs { get; set; }
-        public DbSet<Applicant> Applicants { get; set; }
-        public DbSet<ApplicantVacnacy> ApplicantsVacnacies { get; set; }
+        public DbSet<ApplicantVacancy> ApplicantsDetail { get; set; }
+        public DbSet<InterviewVacancy> ApplicantsVacnacies { get; set; }
     }
 }

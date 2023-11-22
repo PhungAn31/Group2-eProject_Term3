@@ -228,666 +228,6 @@ namespace Project.Migrations
 
             modelBuilder.Entity("Project.Models.Applicant", b =>
                 {
-                    b.Property<string>("Applicant_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("StatusApplicant_Id")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("User_Id")
-                        .HasColumnType("int");
-
-                    b.HasKey("Applicant_Id");
-
-                    b.HasIndex("StatusApplicant_Id");
-
-                    b.HasIndex("User_Id");
-
-                    b.ToTable("Applicants");
-
-                    b.HasData(
-                        new
-                        {
-                            Applicant_Id = "A0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3403),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 1
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3405),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 2
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3408),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 3
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0004",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3410),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 4
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0005",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3412),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 5
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0006",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3415),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 6
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0007",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3418),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 7
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0008",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3420),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 8
-                        },
-                        new
-                        {
-                            Applicant_Id = "A0009",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3422),
-                            StatusApplicant_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            User_Id = 9
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.ApplicantVacnacy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Applicant_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Employee_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("StatusInterview_Id")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Vacancy_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Applicant_Id");
-
-                    b.HasIndex("Employee_Id");
-
-                    b.HasIndex("StatusInterview_Id");
-
-                    b.HasIndex("Vacancy_Id");
-
-                    b.ToTable("ApplicantsVacnacies");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Applicant_Id = "A0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3456),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0001"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Applicant_Id = "A0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3458),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0001"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Applicant_Id = "A0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3460),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0001"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Applicant_Id = "A0004",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3462),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0001"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Applicant_Id = "A0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3464),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0002"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Applicant_Id = "A0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3569),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0002"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Applicant_Id = "A0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3573),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0002"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Applicant_Id = "A0004",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3575),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0002"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Applicant_Id = "A0005",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3578),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0003"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Applicant_Id = "A0004",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3581),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0003"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Applicant_Id = "A0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3583),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0003"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Applicant_Id = "A0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3586),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0004"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Applicant_Id = "A0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3588),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0004"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Applicant_Id = "A0005",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3591),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0004"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Applicant_Id = "A0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3594),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0005"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Applicant_Id = "A0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3597),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0005"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Applicant_Id = "A0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3599),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0005"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Applicant_Id = "A0005",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3602),
-                            StatusInterview_Id = 1,
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Vacancy_Id = "V0005"
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.Department", b =>
-                {
-                    b.Property<string>("Department_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Department_Id");
-
-                    b.ToTable("Departments");
-
-                    b.HasData(
-                        new
-                        {
-                            Department_Id = "D0001",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2657),
-                            Name = "IT",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Department_Id = "D0002",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2669),
-                            Name = "DS",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Department_Id = "D0003",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2671),
-                            Name = "MKT",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.Job", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Department_Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Department_Id");
-
-                    b.ToTable("Jobs");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3049),
-                            Department_Id = "D0001",
-                            Name = "C#",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3052),
-                            Department_Id = "D0001",
-                            Name = "Java",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3054),
-                            Department_Id = "D0001",
-                            Name = "PHP",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3056),
-                            Department_Id = "D0002",
-                            Name = "Adobe Creative Suite",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3058),
-                            Department_Id = "D0002",
-                            Name = "Sketch",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3061),
-                            Department_Id = "D0002",
-                            Name = "Figma",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3063),
-                            Department_Id = "D0003",
-                            Name = "Google Analytics",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3065),
-                            Department_Id = "D0003",
-                            Name = "SEO",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3068),
-                            Department_Id = "D0003",
-                            Name = "Google AdWords , Facebook Ads",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.Position", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Positions");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3111),
-                            Name = "Intern",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3113),
-                            Name = "Fresher",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3115),
-                            Name = "Junior",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3118),
-                            Name = "Senior",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3120),
-                            Name = "Leader",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.StatusApplicant", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("StatusApplicants");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3151),
-                            Name = "Not Process",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3154),
-                            Name = "In Process",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3156),
-                            Name = "Hired",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3158),
-                            Name = "Banned",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.StatusInterview", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("StatusInterviews");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3218),
-                            Name = "Processing",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3220),
-                            Name = "Scheduled",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3223),
-                            Name = "Selected",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3225),
-                            Name = "Rejected",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.StatusVacancy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("StatusVacancy");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3189),
-                            Name = "Open",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3191),
-                            Name = "Close",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3193),
-                            Name = "Suspended",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("Project.Models.User", b =>
-                {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
@@ -929,14 +269,14 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsersClient");
+                    b.ToTable("Applicants");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
                             Birthday = new DateTime(1990, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2914),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2139),
                             District = "City of Westminster",
                             Email = "user1@example.com",
                             Fullname = "James Smith",
@@ -951,7 +291,7 @@ namespace Project.Migrations
                         {
                             Id = 2,
                             Birthday = new DateTime(1995, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2919),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2142),
                             District = "Manchester City",
                             Email = "user2@example.com",
                             Fullname = "Sarah Johnson",
@@ -966,7 +306,7 @@ namespace Project.Migrations
                         {
                             Id = 3,
                             Birthday = new DateTime(1985, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2923),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2145),
                             District = "Birmingham City Centre",
                             Email = "user3@example.com",
                             Fullname = "David Williams",
@@ -981,7 +321,7 @@ namespace Project.Migrations
                         {
                             Id = 4,
                             Birthday = new DateTime(1980, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2928),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2149),
                             District = "Liverpool City Centre",
                             Email = "user4@example.com",
                             Fullname = "Emma Brown",
@@ -996,7 +336,7 @@ namespace Project.Migrations
                         {
                             Id = 5,
                             Birthday = new DateTime(1992, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2932),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2153),
                             District = "Leeds City Centre",
                             Email = "user5@example.com",
                             Fullname = "John Jones",
@@ -1011,7 +351,7 @@ namespace Project.Migrations
                         {
                             Id = 6,
                             Birthday = new DateTime(1978, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2936),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2156),
                             District = "Bristol City Centre",
                             Email = "user6@example.com",
                             Fullname = "Lucy Taylor",
@@ -1026,7 +366,7 @@ namespace Project.Migrations
                         {
                             Id = 7,
                             Birthday = new DateTime(1988, 11, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2942),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2159),
                             District = "Sheffield City Centre",
                             Email = "user7@example.com",
                             Fullname = "Michael Davies",
@@ -1041,7 +381,7 @@ namespace Project.Migrations
                         {
                             Id = 8,
                             Birthday = new DateTime(1998, 4, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2946),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2162),
                             District = "Newcastle City Centre",
                             Email = "user8@example.com",
                             Fullname = "Olivia Wilson",
@@ -1056,7 +396,7 @@ namespace Project.Migrations
                         {
                             Id = 9,
                             Birthday = new DateTime(1983, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(2950),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2165),
                             District = "Nottingham City Centre",
                             Email = "user9@example.com",
                             Fullname = "Thomas Evans",
@@ -1066,6 +406,586 @@ namespace Project.Migrations
                             Province = "Nottinghamshire",
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Ward = "Bridge"
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.ApplicantVacancy", b =>
+                {
+                    b.Property<string>("ApplicantVacancy_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("Applicant_Id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("StatusApplicant_Id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Vacancy_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("ApplicantVacancy_Id");
+
+                    b.HasIndex("Applicant_Id");
+
+                    b.HasIndex("StatusApplicant_Id");
+
+                    b.HasIndex("Vacancy_Id");
+
+                    b.ToTable("ApplicantsDetail");
+
+                    b.HasData(
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0001",
+                            Applicant_Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2510),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0001"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0002",
+                            Applicant_Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2512),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0002"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0003",
+                            Applicant_Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2514),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0003"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0004",
+                            Applicant_Id = 4,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2516),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0004"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0005",
+                            Applicant_Id = 5,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2518),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0005"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0006",
+                            Applicant_Id = 6,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2520),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0001"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0007",
+                            Applicant_Id = 7,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2522),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0002"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0008",
+                            Applicant_Id = 8,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2524),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0003"
+                        },
+                        new
+                        {
+                            ApplicantVacancy_Id = "A0009",
+                            Applicant_Id = 9,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2526),
+                            StatusApplicant_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Vacancy_Id = "V0004"
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.Department", b =>
+                {
+                    b.Property<string>("Department_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Department_Id");
+
+                    b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            Department_Id = "D0001",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(1965),
+                            Name = "IT",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Department_Id = "D0002",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(1975),
+                            Name = "DS",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Department_Id = "D0003",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(1977),
+                            Name = "MKT",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.InterviewVacancy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ApplicantVacancy_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Hr_id")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Interview_id")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("StatusInterview_Id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicantVacancy_Id");
+
+                    b.HasIndex("StatusInterview_Id");
+
+                    b.ToTable("ApplicantsVacnacies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ApplicantVacancy_Id = "A0001",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2550),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ApplicantVacancy_Id = "A0002",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2552),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ApplicantVacancy_Id = "A0003",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2554),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ApplicantVacancy_Id = "A0004",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2555),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ApplicantVacancy_Id = "A0001",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2557),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ApplicantVacancy_Id = "A0002",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2559),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ApplicantVacancy_Id = "A0003",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2560),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ApplicantVacancy_Id = "A0004",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2562),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ApplicantVacancy_Id = "A0005",
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2564),
+                            StatusInterview_Id = 1,
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.Job", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Department_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Department_Id");
+
+                    b.ToTable("Jobs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2192),
+                            Department_Id = "D0001",
+                            Name = "C#",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2194),
+                            Department_Id = "D0001",
+                            Name = "Java",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2196),
+                            Department_Id = "D0001",
+                            Name = "PHP",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2198),
+                            Department_Id = "D0002",
+                            Name = "Adobe Creative Suite",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2199),
+                            Department_Id = "D0002",
+                            Name = "Sketch",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2201),
+                            Department_Id = "D0002",
+                            Name = "Figma",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2203),
+                            Department_Id = "D0003",
+                            Name = "Google Analytics",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2205),
+                            Department_Id = "D0003",
+                            Name = "SEO",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2207),
+                            Department_Id = "D0003",
+                            Name = "Google AdWords , Facebook Ads",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Positions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2304),
+                            Name = "Intern",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2306),
+                            Name = "Fresher",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2307),
+                            Name = "Junior",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2309),
+                            Name = "Senior",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2311),
+                            Name = "Leader",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.StatusApplicant", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusApplicants");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2335),
+                            Name = "Not Process",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2337),
+                            Name = "In Process",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2339),
+                            Name = "Hired",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2340),
+                            Name = "Banned",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.StatusInterview", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusInterviews");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2388),
+                            Name = "Processing",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2390),
+                            Name = "Scheduled",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2392),
+                            Name = "Selected",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2393),
+                            Name = "Rejected",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Project.Models.StatusVacancy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusVacancy");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2365),
+                            Name = "Open",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2366),
+                            Name = "Close",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2368),
+                            Name = "Suspended",
+                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -1128,9 +1048,9 @@ namespace Project.Migrations
                         {
                             Vacancy_Id = "V0001",
                             Benefits = "Benefits",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3269),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2422),
                             Description = "Description",
-                            EndDate = new DateTime(2023, 11, 29, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3262),
+                            EndDate = new DateTime(2023, 12, 2, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2417),
                             Place = "America",
                             Position_Id = 1,
                             Quantity = 5,
@@ -1144,9 +1064,9 @@ namespace Project.Migrations
                         {
                             Vacancy_Id = "V0002",
                             Benefits = "Benefits",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3276),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2426),
                             Description = "Description",
-                            EndDate = new DateTime(2023, 11, 29, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3274),
+                            EndDate = new DateTime(2023, 12, 2, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2424),
                             Place = "America",
                             Position_Id = 2,
                             Quantity = 4,
@@ -1160,9 +1080,9 @@ namespace Project.Migrations
                         {
                             Vacancy_Id = "V0003",
                             Benefits = "Benefits",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3281),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2430),
                             Description = "Description",
-                            EndDate = new DateTime(2023, 11, 29, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3279),
+                            EndDate = new DateTime(2023, 12, 2, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2429),
                             Place = "America",
                             Position_Id = 3,
                             Quantity = 3,
@@ -1176,9 +1096,9 @@ namespace Project.Migrations
                         {
                             Vacancy_Id = "V0004",
                             Benefits = "Benefits",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3286),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2434),
                             Description = "Description",
-                            EndDate = new DateTime(2023, 11, 29, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3284),
+                            EndDate = new DateTime(2023, 12, 2, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2433),
                             Place = "America",
                             Position_Id = 4,
                             Quantity = 2,
@@ -1192,9 +1112,9 @@ namespace Project.Migrations
                         {
                             Vacancy_Id = "V0005",
                             Benefits = "Benefits",
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3291),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2438),
                             Description = "Description",
-                            EndDate = new DateTime(2023, 11, 29, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3290),
+                            EndDate = new DateTime(2023, 12, 2, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2437),
                             Place = "America",
                             Position_Id = 5,
                             Quantity = 1,
@@ -1238,7 +1158,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 1,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3327),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2461),
                             Job_Id = 1,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0001"
@@ -1246,7 +1166,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 2,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3330),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2463),
                             Job_Id = 2,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0001"
@@ -1254,7 +1174,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 3,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3333),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2465),
                             Job_Id = 3,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0001"
@@ -1262,7 +1182,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 4,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3336),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2467),
                             Job_Id = 4,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0002"
@@ -1270,7 +1190,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 5,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3340),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2469),
                             Job_Id = 5,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0002"
@@ -1278,7 +1198,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 6,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3342),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2470),
                             Job_Id = 6,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0002"
@@ -1286,7 +1206,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 7,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3345),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2472),
                             Job_Id = 7,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0003"
@@ -1294,7 +1214,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 8,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3347),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2474),
                             Job_Id = 8,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0003"
@@ -1302,7 +1222,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 9,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3350),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2476),
                             Job_Id = 9,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0003"
@@ -1310,7 +1230,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 10,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3352),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2478),
                             Job_Id = 1,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0004"
@@ -1318,7 +1238,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 11,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3354),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2480),
                             Job_Id = 2,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0004"
@@ -1326,7 +1246,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 12,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3356),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2481),
                             Job_Id = 3,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0004"
@@ -1334,7 +1254,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 13,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3359),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2483),
                             Job_Id = 4,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0005"
@@ -1342,7 +1262,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 14,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3361),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2485),
                             Job_Id = 5,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0005"
@@ -1350,7 +1270,7 @@ namespace Project.Migrations
                         new
                         {
                             Id = 15,
-                            Created_at = new DateTime(2023, 11, 19, 21, 58, 21, 733, DateTimeKind.Local).AddTicks(3364),
+                            Created_at = new DateTime(2023, 11, 22, 15, 23, 51, 498, DateTimeKind.Local).AddTicks(2487),
                             Job_Id = 6,
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Vacancy_Id = "V0005"
@@ -1441,36 +1361,15 @@ namespace Project.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Project.Models.Applicant", b =>
-                {
-                    b.HasOne("Project.Models.StatusApplicant", "StatusApplicant")
-                        .WithMany()
-                        .HasForeignKey("StatusApplicant_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Project.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("User_Id");
-
-                    b.Navigation("StatusApplicant");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Project.Models.ApplicantVacnacy", b =>
+            modelBuilder.Entity("Project.Models.ApplicantVacancy", b =>
                 {
                     b.HasOne("Project.Models.Applicant", "Applicant")
                         .WithMany()
                         .HasForeignKey("Applicant_Id");
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "IdentityUser")
+                    b.HasOne("Project.Models.StatusApplicant", "StatusApplicant")
                         .WithMany()
-                        .HasForeignKey("Employee_Id");
-
-                    b.HasOne("Project.Models.StatusInterview", "StatusInterview")
-                        .WithMany()
-                        .HasForeignKey("StatusInterview_Id")
+                        .HasForeignKey("StatusApplicant_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1480,11 +1379,26 @@ namespace Project.Migrations
 
                     b.Navigation("Applicant");
 
-                    b.Navigation("IdentityUser");
-
-                    b.Navigation("StatusInterview");
+                    b.Navigation("StatusApplicant");
 
                     b.Navigation("Vacancy");
+                });
+
+            modelBuilder.Entity("Project.Models.InterviewVacancy", b =>
+                {
+                    b.HasOne("Project.Models.ApplicantVacancy", "ApplicantVacancy")
+                        .WithMany()
+                        .HasForeignKey("ApplicantVacancy_Id");
+
+                    b.HasOne("Project.Models.StatusInterview", "StatusInterview")
+                        .WithMany()
+                        .HasForeignKey("StatusInterview_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicantVacancy");
+
+                    b.Navigation("StatusInterview");
                 });
 
             modelBuilder.Entity("Project.Models.Job", b =>

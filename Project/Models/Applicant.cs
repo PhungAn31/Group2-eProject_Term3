@@ -1,21 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Project.Models
 {
     public class Applicant : BaseEntity
     {
         [Key]
-        public string? Applicant_Id { get; set; }
-        public int? User_Id  { get; set; }
-        [ForeignKey("User_Id")]
-        [ValidateNever]
-        public User? User { get; set; }
-
-        public int StatusApplicant_Id  { get; set; }
-        [ForeignKey("StatusApplicant_Id")]
-        [ValidateNever]
-        public StatusApplicant? StatusApplicant { get; set; }
+        public int Id { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
+        public string? Fullname { get; set; }
+        public string? Phone { get; set; }
+        public DateTime? Birthday { get; set; }
+        public string? Image { get; set; }
+        public string? Ward { get; set; }
+        public string? District { get; set; }
+        public string? Province { get; set; }
     }
 }

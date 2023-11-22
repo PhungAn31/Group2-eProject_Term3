@@ -97,7 +97,7 @@ namespace Project.Areas.Identity.Pages.Account.Manage
 
             _logger.LogInformation("User with ID '{UserId}' deleted themselves.", userId);
 
-            return Redirect("~/");
+            return Redirect("~/Admin/Account/Login");
         }
     }
 }

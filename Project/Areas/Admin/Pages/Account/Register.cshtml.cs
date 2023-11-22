@@ -122,6 +122,7 @@ namespace Project.Areas.Identity.Pages.Account
                 _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).GetAwaiter().GetResult();
             }
 
+
             Input = new()
             {
                 RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
@@ -188,6 +189,14 @@ namespace Project.Areas.Identity.Pages.Account
                 }
             }
 
+            Input = new()
+            {
+                RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
+                {
+                    Text = i,
+                    Value = i
+                })
+            };
             // If we got this far, something failed, redisplay form
             return Page();
         }
