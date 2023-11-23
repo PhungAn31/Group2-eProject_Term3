@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Project.Models;
 
 namespace Project.Data
 {
@@ -75,11 +74,11 @@ namespace Project.Data
                 new StatusInterview { Id = 4, Name = "Rejected" , Created_at = DateTime.Now }
                 );
             builder.Entity<Vacancy>().HasData(
-                new Vacancy { Vacancy_Id = "V0001" , Employee_Id = null , Position_Id = 1 , StatusVacancy_Id = 1 , Quantity = 5 , Salary = 2000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
-                new Vacancy { Vacancy_Id = "V0002" , Employee_Id = null , Position_Id = 2 , StatusVacancy_Id = 1 , Quantity = 4 , Salary = 7000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
-                new Vacancy { Vacancy_Id = "V0003" , Employee_Id = null , Position_Id = 3 , StatusVacancy_Id = 1 , Quantity = 3 , Salary = 10000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
-                new Vacancy { Vacancy_Id = "V0004" , Employee_Id = null , Position_Id = 4 , StatusVacancy_Id = 1 , Quantity = 2 , Salary = 13000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
-                new Vacancy { Vacancy_Id = "V0005" , Employee_Id = null , Position_Id = 5 , StatusVacancy_Id = 1 , Quantity = 1 , Salary = 15000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now}
+                new Vacancy { Vacancy_Id = "V0001" , Hr_Id = null , Position_Id = 1 , StatusVacancy_Id = 1 , Quantity = 5 , Salary = 2000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
+                new Vacancy { Vacancy_Id = "V0002" , Hr_Id = null , Position_Id = 2 , StatusVacancy_Id = 1 , Quantity = 4 , Salary = 7000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
+                new Vacancy { Vacancy_Id = "V0003" , Hr_Id = null , Position_Id = 3 , StatusVacancy_Id = 1 , Quantity = 3 , Salary = 10000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
+                new Vacancy { Vacancy_Id = "V0004" , Hr_Id = null , Position_Id = 4 , StatusVacancy_Id = 1 , Quantity = 2 , Salary = 13000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now},
+                new Vacancy { Vacancy_Id = "V0005" , Hr_Id = null , Position_Id = 5 , StatusVacancy_Id = 1 , Quantity = 1 , Salary = 15000 , Place = "America" , Title = "Title" , Requirement = "Requirement" , Description = "Description" , Benefits = "Benefits" , EndDate = DateTime.Now.AddDays(10) , Created_at = DateTime.Now}
                 );
             builder.Entity<VacancyJob>().HasData(
                 new VacancyJob { Id = 1, Vacancy_Id = "V0001", Job_Id = 1, Created_at = DateTime.Now },
