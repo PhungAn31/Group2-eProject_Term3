@@ -10,6 +10,7 @@
         IPositionRepository Position { get; }
         IVacancyJobRepository VacancyJob { get; }
         IVacancyRepository Vacancy { get; }
+        IAppUserRepository AppUser { get; }
         Task Save();
     }
 }

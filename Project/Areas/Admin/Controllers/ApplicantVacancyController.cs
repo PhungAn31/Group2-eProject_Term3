@@ -9,7 +9,7 @@ using System.Data;
 namespace Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = SD.Role_Hr)]
     public class ApplicantVacancyController : Controller
     {
         IUnitOfWork _unitOfWork;

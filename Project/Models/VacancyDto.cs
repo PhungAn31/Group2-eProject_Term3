@@ -8,11 +8,15 @@ namespace Project.Models
     public class VacancyDto
     {
         public string? Vacancy_Id { get; set; }
+
         public string? Hr_Id { get; set; }
+        [ValidateNever]
         public IdentityUser? IdentityUser { get; set; }
         public int Position_Id { get; set; }
+        [ValidateNever]
         public Position? Position { get; set; }
         public int StatusVacancy_Id { get; set; }
+        [ValidateNever]
         public StatusVacancy? StatusVacancy { get; set; }
         public int Quantity { get; set; }
         public int Salary { get; set; }

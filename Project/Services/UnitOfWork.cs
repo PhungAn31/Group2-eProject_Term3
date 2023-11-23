@@ -9,20 +9,15 @@ namespace Project.Services
         ApplicationDbContext _db;
 
         public IApplicantRepository Applicant { get; private set; }
-
         public IApplicantVacancyRepository ApplicantVacancy { get; private set; }
-
         public IDepartmentRepository Department { get; private set; }
-
         public IInterviewVacancyRepository InterviewVacancy { get; private set; }
-
         public IJobRepository Job { get; private set; }
-
         public IPositionRepository Position { get; private set; }
-
         public IVacancyJobRepository VacancyJob { get; private set; }
-
         public IVacancyRepository Vacancy { get; private set; }
+        public IAppUserRepository AppUser { get; private set; }
+
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -34,6 +29,7 @@ namespace Project.Services
             Position = new PositionRepository(_db);
             VacancyJob = new VacancyJobRepository(_db);
             Vacancy = new VacancyRepository(_db);
+            AppUser = new AppUserRepository(_db);   
         }
         public async Task Save()
         {

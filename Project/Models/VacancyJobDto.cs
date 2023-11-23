@@ -8,6 +8,7 @@ namespace Project.Models
     {
         public int Id { get; set; }
         public string? Vacancy_Id { get; set; }
+        [ValidateNever]
         public Vacancy? Vacancy { get; set; }
         public int? Job_Id { get; set; }
         public Job? Job { get; set; }

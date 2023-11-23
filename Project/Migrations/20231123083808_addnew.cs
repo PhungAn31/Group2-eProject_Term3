@@ -431,15 +431,15 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Birthday", "Created_at", "District", "Email", "Fullname", "Image", "Password", "Phone", "Province", "Updated_at", "Ward" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(1990, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6273), "City of Westminster", "user1@example.com", "James Smith", "image1.jpg", "Abc12345678", "1234567890", "Greater London", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Westminster" },
-                    { 2, new DateTime(1995, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6276), "Manchester City", "user2@example.com", "Sarah Johnson", "image2.jpg", "Abc12345678", "2345678901", "Greater Manchester", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
-                    { 3, new DateTime(1985, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6279), "Birmingham City Centre", "user3@example.com", "David Williams", "image3.jpg", "Abc12345678", "3456789012", "West Midlands", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ladywood" },
-                    { 4, new DateTime(1980, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6283), "Liverpool City Centre", "user4@example.com", "Emma Brown", "image4.jpg", "Abc12345678", "4567890123", "Merseyside", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Riverside" },
-                    { 5, new DateTime(1992, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6286), "Leeds City Centre", "user5@example.com", "John Jones", "image5.jpg", "Abc12345678", "5678901234", "West Yorkshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
-                    { 6, new DateTime(1978, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6289), "Bristol City Centre", "user6@example.com", "Lucy Taylor", "image6.jpg", "Abc12345678", "6789012345", "Bristol", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Central" },
-                    { 7, new DateTime(1988, 11, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6292), "Sheffield City Centre", "user7@example.com", "Michael Davies", "image7.jpg", "Abc12345678", "7890123456", "South Yorkshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
-                    { 8, new DateTime(1998, 4, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6295), "Newcastle City Centre", "user8@example.com", "Olivia Wilson", "image8.jpg", "Abc12345678", "8901234567", "Tyne and Wear", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ouseburn" },
-                    { 9, new DateTime(1983, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6298), "Nottingham City Centre", "user9@example.com", "Thomas Evans", "image9.jpg", "Abc12345678", "9012345678", "Nottinghamshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Bridge" }
+                    { 1, new DateTime(1990, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(119), "City of Westminster", "user1@example.com", "James Smith", "image1.jpg", "Abc12345678", "1234567890", "Greater London", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Westminster" },
+                    { 2, new DateTime(1995, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(121), "Manchester City", "user2@example.com", "Sarah Johnson", "image2.jpg", "Abc12345678", "2345678901", "Greater Manchester", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
+                    { 3, new DateTime(1985, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(123), "Birmingham City Centre", "user3@example.com", "David Williams", "image3.jpg", "Abc12345678", "3456789012", "West Midlands", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ladywood" },
+                    { 4, new DateTime(1980, 12, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(126), "Liverpool City Centre", "user4@example.com", "Emma Brown", "image4.jpg", "Abc12345678", "4567890123", "Merseyside", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Riverside" },
+                    { 5, new DateTime(1992, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(128), "Leeds City Centre", "user5@example.com", "John Jones", "image5.jpg", "Abc12345678", "5678901234", "West Yorkshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
+                    { 6, new DateTime(1978, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(129), "Bristol City Centre", "user6@example.com", "Lucy Taylor", "image6.jpg", "Abc12345678", "6789012345", "Bristol", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Central" },
+                    { 7, new DateTime(1988, 11, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(131), "Sheffield City Centre", "user7@example.com", "Michael Davies", "image7.jpg", "Abc12345678", "7890123456", "South Yorkshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "City Centre" },
+                    { 8, new DateTime(1998, 4, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(135), "Newcastle City Centre", "user8@example.com", "Olivia Wilson", "image8.jpg", "Abc12345678", "8901234567", "Tyne and Wear", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ouseburn" },
+                    { 9, new DateTime(1983, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(137), "Nottingham City Centre", "user9@example.com", "Thomas Evans", "image9.jpg", "Abc12345678", "9012345678", "Nottinghamshire", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Bridge" }
                 });
 
             migrationBuilder.InsertData(
@@ -447,9 +447,9 @@ namespace Project.Migrations
                 columns: new[] { "Department_Id", "Created_at", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { "D0001", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6041), "IT", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "D0002", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6050), "DS", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "D0003", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6052), "MKT", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { "D0001", new DateTime(2023, 11, 23, 15, 38, 8, 533, DateTimeKind.Local).AddTicks(9993), "IT", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "D0002", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(1), "DS", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "D0003", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(2), "MKT", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -457,11 +457,11 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6370), "Intern", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6371), "Fresher", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6373), "Junior", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6375), "Senior", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 5, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6376), "Leader", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(177), "Intern", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(179), "Fresher", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(179), "Junior", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(180), "Senior", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 5, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(181), "Leader", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -469,10 +469,10 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6403), "Not Process", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6405), "In Process", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6406), "Hired", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6408), "Banned", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(195), "Not Process", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(197), "In Process", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(198), "Hired", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(198), "Banned", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -480,10 +480,10 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6457), "Processing", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6458), "Scheduled", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6460), "Selected", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6462), "Rejected", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(227), "Processing", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(229), "Scheduled", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(229), "Selected", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(230), "Rejected", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -491,9 +491,9 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6430), "Open", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6432), "Close", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6434), "Suspended", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(209), "Open", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(214), "Close", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(215), "Suspended", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -501,15 +501,15 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Department_Id", "Name", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6328), "D0001", "C#", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6330), "D0001", "Java", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6332), "D0001", "PHP", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6334), "D0002", "Adobe Creative Suite", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 5, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6336), "D0002", "Sketch", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 6, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6338), "D0002", "Figma", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 7, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6339), "D0003", "Google Analytics", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 8, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6341), "D0003", "SEO", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 9, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6343), "D0003", "Google AdWords , Facebook Ads", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(155), "D0001", "C#", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(156), "D0001", "Java", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(157), "D0001", "PHP", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(158), "D0002", "Adobe Creative Suite", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 5, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(159), "D0002", "Sketch", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 6, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(160), "D0002", "Figma", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 7, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(161), "D0003", "Google Analytics", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 8, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(162), "D0003", "SEO", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 9, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(163), "D0003", "Google AdWords , Facebook Ads", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -517,11 +517,11 @@ namespace Project.Migrations
                 columns: new[] { "Vacancy_Id", "Benefits", "Created_at", "Description", "EndDate", "Hr_Id", "Place", "Position_Id", "Quantity", "Requirement", "Salary", "StatusVacancy_Id", "Title", "Updated_at" },
                 values: new object[,]
                 {
-                    { "V0001", "Benefits", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6493), "Description", new DateTime(2023, 12, 3, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6488), null, "America", 1, 5, "Requirement", 2000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "V0002", "Benefits", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6497), "Description", new DateTime(2023, 12, 3, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6496), null, "America", 2, 4, "Requirement", 7000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "V0003", "Benefits", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6501), "Description", new DateTime(2023, 12, 3, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6500), null, "America", 3, 3, "Requirement", 10000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "V0004", "Benefits", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6505), "Description", new DateTime(2023, 12, 3, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6503), null, "America", 4, 2, "Requirement", 13000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { "V0005", "Benefits", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6508), "Description", new DateTime(2023, 12, 3, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6507), null, "America", 5, 1, "Requirement", 15000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { "V0001", "Benefits", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(249), "Description", new DateTime(2023, 12, 3, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(244), null, "America", 1, 5, "Requirement", 2000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "V0002", "Benefits", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(251), "Description", new DateTime(2023, 12, 3, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(251), null, "America", 2, 4, "Requirement", 7000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "V0003", "Benefits", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(253), "Description", new DateTime(2023, 12, 3, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(253), null, "America", 3, 3, "Requirement", 10000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "V0004", "Benefits", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(256), "Description", new DateTime(2023, 12, 3, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(255), null, "America", 4, 2, "Requirement", 13000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { "V0005", "Benefits", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(258), "Description", new DateTime(2023, 12, 3, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(257), null, "America", 5, 1, "Requirement", 15000, 1, "Title", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.InsertData(
@@ -529,15 +529,15 @@ namespace Project.Migrations
                 columns: new[] { "ApplicantVacancy_Id", "Applicant_Id", "Created_at", "Hr_Id", "StatusApplicant_Id", "Updated_at", "Vacancy_Id" },
                 values: new object[,]
                 {
-                    { "A0001", 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6727), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
-                    { "A0002", 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6729), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
-                    { "A0003", 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6731), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
-                    { "A0004", 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6733), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
-                    { "A0005", 5, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6735), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
-                    { "A0006", 6, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6737), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
-                    { "A0007", 7, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6739), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
-                    { "A0008", 8, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6741), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
-                    { "A0009", 9, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6743), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" }
+                    { "A0001", 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(341), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
+                    { "A0002", 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(342), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
+                    { "A0003", 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(343), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
+                    { "A0004", 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(344), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
+                    { "A0005", 5, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(345), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
+                    { "A0006", 6, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(346), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
+                    { "A0007", 7, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(347), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
+                    { "A0008", 8, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(348), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
+                    { "A0009", 9, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(349), null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" }
                 });
 
             migrationBuilder.InsertData(
@@ -545,21 +545,21 @@ namespace Project.Migrations
                 columns: new[] { "Id", "Created_at", "Job_Id", "Updated_at", "Vacancy_Id" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6532), 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
-                    { 2, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6534), 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
-                    { 3, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6535), 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
-                    { 4, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6537), 4, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
-                    { 5, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6539), 5, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
-                    { 6, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6683), 6, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
-                    { 7, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6686), 7, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
-                    { 8, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6687), 8, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
-                    { 9, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6689), 9, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
-                    { 10, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6691), 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
-                    { 11, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6693), 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
-                    { 12, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6695), 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
-                    { 13, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6697), 4, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
-                    { 14, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6699), 5, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
-                    { 15, new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6700), 6, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" }
+                    { 1, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(271), 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
+                    { 2, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(272), 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
+                    { 3, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(273), 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0001" },
+                    { 4, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(274), 4, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
+                    { 5, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(275), 5, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
+                    { 6, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(276), 6, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0002" },
+                    { 7, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(277), 7, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
+                    { 8, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(278), 8, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
+                    { 9, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(279), 9, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0003" },
+                    { 10, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(280), 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
+                    { 11, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(281), 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
+                    { 12, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(282), 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0004" },
+                    { 13, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(325), 4, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
+                    { 14, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(326), 5, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" },
+                    { 15, new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(327), 6, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "V0005" }
                 });
 
             migrationBuilder.InsertData(
@@ -567,15 +567,15 @@ namespace Project.Migrations
                 columns: new[] { "Id", "ApplicantVacancy_Id", "Created_at", "EndDate", "Interview_Id", "StartDate", "StatusInterview_Id", "Updated_at" },
                 values: new object[,]
                 {
-                    { 1, "A0001", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6767), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 2, "A0002", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6769), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 3, "A0003", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6770), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 4, "A0004", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6772), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 5, "A0001", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6774), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 6, "A0002", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6776), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 7, "A0003", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6777), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 8, "A0004", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6779), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
-                    { 9, "A0005", new DateTime(2023, 11, 23, 11, 57, 40, 701, DateTimeKind.Local).AddTicks(6781), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                    { 1, "A0001", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(364), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2, "A0002", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(365), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3, "A0003", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(366), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 4, "A0004", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(367), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 5, "A0001", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(368), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 6, "A0002", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(369), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 7, "A0003", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(370), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 8, "A0004", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(371), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 9, "A0005", new DateTime(2023, 11, 23, 15, 38, 8, 534, DateTimeKind.Local).AddTicks(372), null, null, null, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
                 });
 
             migrationBuilder.CreateIndex(
